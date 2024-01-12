@@ -4,7 +4,7 @@
 }
 
 .header__section {
-  background-image: url(../header_image.png);
+  background-image: url(../images/header_image.png);
   height: auto;
   display: flex;
   justify-content: center;
@@ -39,6 +39,13 @@
   color: white;
   font-style: normal;
   font-size: 17px;
+}
+
+.navigation__list li:hover{
+   font-weight: 700;
+   color: black;
+   transform: scale(1.4);
+   transition: transform 0.6s ease;
 }
 
 .navigation__logo {
@@ -89,6 +96,13 @@
   color: white;
   font-size: 10px;
 }
+
+.search_btn:hover{
+background-color: black;
+transition: 0.5s;
+transform: scale(1.2);
+border-radius: 20px;
+}
 i {
   margin-left: 10px;
 }
@@ -98,6 +112,11 @@ i {
   border: none;
   cursor: pointer;
   display: none;
+}
+
+.navigation__button:hover{
+    transform: scale(1.5);
+    transition: transform 0.6s ease;
 }
 
 @media screen and (max-width: 700px) {
@@ -116,10 +135,100 @@ i {
 
   .header__navigation {
     justify-content: center;
+    position: absolute;
+    bottom: 0;
   }
 
   .navigation__button {
     display: block;
     font-size: 30px;
   }
+}
+
+.why__choose-us {
+  background-image: url("../images/about__image.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 200px;
+}
+
+.info__about-us {
+  width: 600px;
+}
+.info__texts {
+  color: white;
+  font-size: 34px;
+  /* max-width: 400px; */
+}
+
+.info__paragraphs {
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.why__choose-us-images {
+  margin-left: 120px;
+}
+
+.second__image {
+  margin-left: 100px;
+}
+
+.info__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-color: #5474fd;
+  margin-top: 40px;
+  color: white;
+}
+
+.info__btn:hover{
+    transform: scale(1.2);
+    background-color: black;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+}
+
+@media  screen and (max-width: 700px) {
+   .second__image{
+    margin: 0;
+   }
+
+   .why__choose-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .why__choose-us-images{
+    margin-left: 40px;
+   }
+
+   .first__image, .second__image{
+    width: 200px;
+   }
+
+   .info__texts{
+    font-size: 25px;
+   }
+
+   .info__paragraphs{
+    font-size: small;
+   }
+
+   .info__btn{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+   }
 }
