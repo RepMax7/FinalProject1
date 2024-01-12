@@ -332,6 +332,10 @@ i {
   font-size: 30px;
 }
 
+.tourist__image {
+  width: 30%;
+}
+
 .reviews__paragraph {
   background-color: #333;
   padding: 40px;
